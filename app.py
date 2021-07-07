@@ -25,6 +25,18 @@ def Summary():
 def Syn():
     return render_template('syn.html')
 
+@app.route('/0plag',methods=['GET'])
+def Plag():
+    return render_template('0plag.html')
+
+@app.route('/0word',methods=['GET'])
+def Word():
+    return render_template('0word.html')
+
+@app.route('/0re',methods=['GET'])
+def Re():
+    return render_template('0re.html')
+
 @app.route("/score", methods=['POST'])
 #@app.route("/score")
 def score():
